@@ -6,7 +6,7 @@
     $sen=$_GET["senha"];
     do{
         if (($log == "wan") && ($sen == "adminMaster") )
-            header("Location: menu.html");
+            header("Location: menu.html"); //inserir o local da proxima pagina
         else
         {
             echo "Usuário/Senha incorretos!";
