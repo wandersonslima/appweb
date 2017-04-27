@@ -6,7 +6,7 @@
     $sen=$_GET["senha"];
     do{
         if (($log == "wan") && ($sen == "adminMaster") )
-            header("Location: menu.html");
+            header("Location: menu.html"); //verificar o nome da proxima pagina
         else
         {
             echo "Usuário/Senha incorretos!";
