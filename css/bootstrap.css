@@ -6787,3 +6787,9 @@ button.close {
 
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.bodyImagen {
+  background-image: url(/imagens/LoginFundo.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;}
