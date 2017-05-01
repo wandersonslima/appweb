@@ -1,62 +1,76 @@
-<?php
- include "acessa.php" //conecta com o banco
-?>
-<?php
-    /* listando variáveis */
+<html>
+<?php include "header.php" ?>
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="utf-8" />
+  
+  <title>Sign-Up</title>
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    $nome=$_POST["nome"];
-    $endereco=$_POST["endereco"];
-    $cep=$_POST["cep"];
-    $telefone=$_POST["telefone"];
-    $cpf=$_POST["cpf"];
-    $rg=$_POST["rg"];
-    $login=$_POST["login"];
-    $senha=$_POST["senha"];
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
 
-   //função cadastrar
-    function cadastraDados ($conexao,$nome,$endereco,$cep,$telefone,$cpf,$rg,$login,$senha)
-    {
-        $ sql = "INSERT INTO clientes (nome,endereco,cep,telefone,cpf,rg,login,senha) VALUES ('{$nome}','{$endereco}','{$cep}','{$telefone}','{$cpf}','{$rg}','{$login}','{$senha}',)";
-        /*verificar nomes na tabela cliente, tem que ser igual*/
-        return mysqli_query($conexao,$sql);
-    }
-    //tela de confirmação de cadastro. pode ser auterada
-    do
-    {
-        echo "Nome:".$nome."<br/>";
-        echo "Endereço:".$endereco."<br/>";
-        echo "CEP:".$cep."<br/>";
-        echo "Telefone:".$telefone."<br/>";
-        echo "CPF:".$cpf."<br/>";
-        echo "RG:".$rg."<br/>";
-        echo "Login:".$login."<br/>";
-        echo "Senha".$senha."<br/>";
-        //criar confirmação
+ 
+   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
+</script>
+<div class="container">
 
-        //condiciona realizar cadastro
-        if (confirm == "yes")
-        {
-            cadastraDados($conexao,$nome,$endereco,$cep,$telefone,$cpf,$rg,$login,$senha);
-        }
-        else
-        {
-            //criar aqui um link para retorno da pagina onde é inserido os dados caso cliente queira auterar os dados
-        }
-    }while(confirm != "yes")
-    if (insereProdutos($conexao, $nome, $preco, $desc))
-    {
-        echo "Adicionado!!<br/>";
-    }
-else
-    {
-    echo "Erro!";
-    $erro=mysqli_error($conexao);
-    echo $erro;
-    }
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    	<form role="form">
+			<h2>Cadastre-se ou faça seu <small><a href="login.php">Login</a></small></h2>
+			<hr class="colorgraph">
+			
+			<div class="form-group">
+                <input type="text" name="primeiro-nome" id="primeiro-nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">
+			</div>
+			<div class="form-group">
+				<input type="text" name="endereco" id="endereco" class="form-control input-lg" placeholder="Endereço" tabindex="3">
+			</div>
+			<div class="form-group">
+				<input type="text" name="cep" id="cep" class="form-control input-lg" placeholder="CEP" tabindex="3">
+			</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="text" name="telcelular" id="telcelular" class="form-control input-lg" placeholder="Tel. Celular" tabindex="1">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="text" name="telcasa" id="telcasa" class="form-control input-lg" placeholder="Tel. Residêncial" tabindex="1">
+						</div>
+					</div>
+				</div>
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de E-Mail" tabindex="4">
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="senha" id="senha" class="form-control input-lg" placeholder="Senha" tabindex="5">
+					</div>
+				</div>
+				
+			</div>
+						
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-6"><input type="submit" value="Cadastrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+				<div class="col-xs-12 col-md-6"><input type="reset" value="Excluir" class="btn btn-danger btn-block btn-lg"></div>
+			</div>
+		</form>                             
+	</div>
+</div>
+<!-- Modal -->
 
-
-
-
-
-
-?>
+</div>
+</body>
+</html>

@@ -1,7 +1,15 @@
+<div id="essenc">
+	<head>
+		<meta charset="utf-8">
+			<link href="css/bootstrap.css" rel="stylesheet" />
+            <title>Honda</title>
+            <link rel="icon" type="/png" href="imagens/logo.png" />
+	</head>
+</div>
 <div id="logo">
 	<table border="1" width="100%" height="108">
 		<tr>
-			<td bgcolor="#000000" ><center><img src="imagens/hlogo.png" width="183" height="100" alt="Honda" class="img-rounded"></center></td>
+			<td class="fixed" bgcolor="#000000" ><center><img src="imagens/hlogo.png" width="183" height="100" alt="Honda" class="img-rounded"></center></td>
 		</tr>
 	</table>
 </div>
@@ -23,11 +31,13 @@
 	</nav>
 </div>
 <div id="rodape">
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div>
-			<ul class="nav navbar-nav">
-				<li><a>Honda 2017 - Todos os direitos reservados.</a></li>
-			</ul>
-		</div>
-	</div>
+    <footer>
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a>Honda 2017 - Todos os direitos reservados.</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>>
 </div>

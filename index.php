@@ -1,20 +1,19 @@
 <html>
-<head>
-			<meta charset="utf-8">
-			<link href="css/bootstrap.css" rel="stylesheet" />
-		</head>
-			<body>
-			
-								<div id="wrapp">
-									<?php include "header.php" ?>
-									<div id="content"></div>
-									
-					</div>
-				</div>
-				
-					
-				
-					
-			<body>		
-
+	<?php include "header.php" ?>
+		  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="40" id="bs-carousel">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Bem Vindo a Honda</h1>        
+            <h3>Apaixone-se por nossos carros.</h3>
+        </hgroup>
+      </div>
+    </div> 
+    </div>
+   </div> 
+ <body>		
 </html>
