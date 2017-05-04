@@ -24,28 +24,28 @@
 
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-    	<form role="form">
+    	<form role="form" method="post" action="actionCadastro.php">
 			<h2>Cadastre-se ou faça seu <small><a href="login.php">Login</a></small></h2>
 			<hr class="colorgraph">
 			
 			<div class="form-group">
-                <input type="text" name="primeiro-nome" id="primeiro-nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">
+                <input type="text" name="nome" id="nome" class="form-control input-lg" placeholder="Nome" tabindex="1">
 			</div>
 			<div class="form-group">
 				<input type="text" name="endereco" id="endereco" class="form-control input-lg" placeholder="Endereço" tabindex="3">
 			</div>
 			<div class="form-group">
-				<input type="text" name="cep" id="cep" class="form-control input-lg" placeholder="CEP" tabindex="3">
+				<input type="text" name="cep" id="cep" class="form-control input-lg" placeholder="CEP" tabindex="3" maxlength="10">
 			</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="form-group">
-							<input type="text" name="telcelular" id="telcelular" class="form-control input-lg" placeholder="Tel. Celular" tabindex="1">
+							<input type="text" name="tel_celular" id="tel_celular" class="form-control input-lg" placeholder="Tel. Celular" tabindex="1" maxlength="12">
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="form-group">
-							<input type="text" name="telcasa" id="telcasa" class="form-control input-lg" placeholder="Tel. Residêncial" tabindex="1">
+							<input type="text" name="tel_residencial" id="tel_residencial" class="form-control input-lg" placeholder="Tel. Residêncial" tabindex="1" maxlength="12">
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,10 @@
 				<div class="col-xs-12 col-md-6"><input type="submit" value="Cadastrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 				<div class="col-xs-12 col-md-6"><input type="reset" value="Excluir" class="btn btn-danger btn-block btn-lg"></div>
 			</div>
-		</form>                             
+		</form>
+        </br>
+        </br>
+        </br>
 	</div>
 </div>
 <!-- Modal -->
